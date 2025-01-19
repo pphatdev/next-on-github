@@ -28,6 +28,8 @@ jobs:
         uses: actions/configure-pages@v4
         with:
           static_site_generator: next
+          token: ${{ secrets.GH_TOKEN }}
+          enablement: false
 
       - name: Build with Next.js 🏗️
         run: npx next build
