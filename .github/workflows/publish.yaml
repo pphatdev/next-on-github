@@ -28,7 +28,7 @@ jobs:
         uses: actions/configure-pages@v4
         with:
           static_site_generator: next
-          token: ${{ secrets.GH_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
           enablement: false
 
       - name: Build with Next.js 🏗️
